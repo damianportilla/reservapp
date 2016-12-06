@@ -1,0 +1,201 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>myweb</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./css/styles.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!-- Navegacion -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:$.scrollTo('#myCarousel',800);">Reservaap</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="javascript:$.scrollTo('#section2',800);">Iniciar sesion</a>
+                    </li>
+                    <li>
+                        <a href="javascript:$.scrollTo('#probando',800);">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Background Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+
+                <div class="fill" style="background-image:url('imagenes/tablademesa.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1 class="text-center righteous" id="txt-img1">AHORA RESERVAR TU MESA PARA ESTA NOCHE ES MUCHO MAS FACIL</h1>
+                    <div class="botonreg">
+                    <a type="button" href="javascript:$.scrollTo('#section2',800);" class="btn-lg righteous" id="botoncarousel"> RESERVA </a>
+                 	</div>
+                 </div>
+            </div>
+            <div class="item">
+
+                <div class="fill" style="background-image:url('imagenes/copas.jpg');"></div>
+                <div class="carousel-caption">
+                 <h1 class="text-center bad" id="txt-img1">REGALA UNA NOCHE ROMANTICA DE ENSUEÑO</h1>
+                    <div class="botonreg">
+                    <a type="button" href="javascript:$.scrollTo('#section2',800);" class="btn-lg bad" id="botoncarousel"> RESERVA </a>
+                 	</div>
+                </div>
+            </div>
+            <div class="item">
+
+                <div class="fill" style="background-image:url('imagenes/cocina.jpg');">
+				</div>
+                
+                <div class="carousel-caption">
+                    <h1 class="text-center alfa" id="txt-img1">MERENDA ANTES DE SEGUIR CON TU ACTIVIDAD. PODES RESERVAR LAS 24HS.</h1>
+                    <div class="botonreg">
+                    <a type="button" href="javascript:$.scrollTo('#section2',800);" class="btn alfa" id="botoncarousel">RESERVA</a>
+                 	</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        
+
+    </header>
+
+    <!-- contenido -->
+    <div class="container-fluid" id="probando">
+    
+        <div class="row" id="section-1">
+            <div class="col-lg-12" id="section1">
+                <div class="righteous">
+                    <div class="cajaform">
+                    <h1>Registrate</h1>
+                    <form class="text-center form-group" action="formulario.php" method="post">
+                            <label for="nombre">Nombre</label>
+                            <br>
+                            <input  type="text" name="nombre" placeholder="Nombre" required>
+                            <br>
+                            <br>
+                            <label for="apellido">Apellido</label>
+                            <br>
+                            <input type="text" name="apellido" placeholder="Apellido" required>
+                            <br>
+                            <br>
+                            <label for="mail">E-mail</label>
+                            <br>
+                            <input type="email" name="mail" placeholder="E-mail" required>
+                            <br>
+                            <br>
+                            <label for="contraseña">Contraseña</label>
+                            <br>
+                            <input type="password" name="contrasenia" placeholder="contraseña" required>
+                            <br>
+                            <br>
+                            <label for="telefono">Telefono</label>
+                            <br>
+                            <input type="text" name="telefono" placeholder="ej: 2215647898" required>
+                            <br>
+                            <br>
+                            <input class="btn btn-primary btn-lg" id="boton-reg" type="submit" value="Registrarse">
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                   <div id="section2">
+                     <div class="row righteous">
+                        <div class="col-lg-12 text-center" id="form-log">
+                                    <form action="./checklogin.php" class="form-top form-signin text-center" method="post">
+                                    <h1 class="text-center">Ingresa</h1>
+                                    <input name="username" type="text" class="form-control" placeholder="Email" required autofocus>
+                                    <input name="contrasenia" type="password" class="form-control" placeholder="Password" required>
+                                    <input class="btn btn-lg btn-primary btn-block"  type="submit" value="Inicia Sesion">
+                                    </form>
+                             </div>
+                     </div>
+                    </div>
+        <hr>
+    <div class="col-sm-8 col-sm-offset-2 text-center righteous">
+      <h2>Buscanos en las redes sociales</h2>
+      
+      <hr>
+      <h4>
+        Podes acceder a mas promociones!
+      </h4>
+      <p>Te esperamos!</p>
+      <hr>
+      <ul class="list-inline center-block">
+        <li><a href="http://facebook.com/bootply"><img src="http://s.bootply.com/assets/example/soc_fb.png"></a></li>
+        <li><a href="http://twitter.com/bootply"><img src="http://s.bootply.com/assets/example/soc_tw.png"></a></li>
+        <li><a href="http://google.com/+bootply"><img src="http://s.bootply.com/assets/example/soc_gplus.png"></a></li>
+        <li><a href="http://pinterest.com/in1"><img src="http://s.bootply.com/assets/example/soc_pin.png"></a></li>
+      </ul>
+      
+    </div><!--/col-->
+        <!-- Footer -->
+        <footer class="righteous">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Damian portilla (2215798072)</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+</div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

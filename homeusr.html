@@ -1,0 +1,258 @@
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>myweb</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./css/styles.css" rel="stylesheet">
+        <!--FONTAWESOME MAIN STYLE -->
+    <link href="./css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="./css/style2.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+    <!-- Navegacion -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:$.scrollTo('#about-section',800);">Reservaap</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="javascript:$.scrollTo('#about-section',800);">Reservar</a>
+                    </li>
+                    <li>
+                        <a href="javascript:$.scrollTo('#pagos',800);">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="javascript:$.scrollTo('#mensaje',800);">Mensaje</a>
+                    </li>
+                    <li>
+                        <a href="./PHP/logout.php">Cerrar sesion</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<body>
+
+     <div id="about-section" class="section">
+        <div class="container" >
+          
+               
+            <div class="row main-low-margin">
+                <div class="col-md-12 col-sm-12" >
+                   <form action="reserva.php" method="post" class=""> 
+                    <h1 id="masgrande" class="text-center">Reserva</h1>
+                       <h3 class="text-center">Elegi el dia</h3>
+                       <select class="righteous form-control center-block" name="dia" id="menosw">
+                        <option value="LUNES">LUNES</option>
+                        <option value="MARTES">MARTES</option>
+                        <option value="MIERCOLES">MIERCOLES</option>
+                        <option value="JUEVES">JUEVES</option>
+                        <option value="VIERNES">VIERNES</option>
+                        
+                    </select>
+
+                    <h3 class="text-center">Elegi la hora</h3>
+                    <select class="righteous form-control center-block" name="hora" id="menosw">
+                        <option value="hora1">20:30</option>
+                        <option value="hora2">20:45</option>
+                        <option value="hora3">21:00</option>
+                        <option value="hora4">21:15</option>
+                        <option value="hora5">21:30</option>
+                        <option value="hora6">22:00</option>
+                    </select>
+                    <h3 class="text-center">¿Cuantos son?</h3>
+                    <select class="righteous form-control center-block" name="cantidad" id="menosw">
+                        <option value="cantidad1">1</option>
+                        <option value="cantidad2">2</option>
+                        <option value="cantidad3">3</option>
+                        <option value="cantidad4">4</option>
+                        <option value="cantidad5">5</option>
+                        <option value="cantidad6">6 o mas</option>
+                    </select>
+                    
+                    <input class="center-block btn btn-primary btn-lg" id="boton-res" type="submit" value="Reservar" href="/resexito.html">
+
+                    </form>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                </div>
+            </div>
+          
+            
+        </div>
+    </div>
+
+<div class="container" id="pagos" >
+        <div class="row main-low-margin text-center" >
+                <div class="col-md-4 col-sm-4" >
+                    <i class="fa fa-rss fa-5x" aria-hidden="true"></i>
+                    <h3>Wi-Fi</h3>
+                    <p>
+                        Contamos con una amplia red de wifi para
+                        que puedas disfrutar y no te desconectes 
+                        nunca de tus cosas!
+                    </p>
+                </div>               
+                    <div class="col-md-4 col-sm-4" >
+                    <i class="fa fa-credit-card fa-5x" aria-hidden="true"></i>
+                    <h3>Paga con tarjeta</h3>
+                    <p>
+                        Podes pagar con tu tarjeta de credito
+                        luego de consumir. No la necesitas para hacer la reserva!
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4" >
+                    <i class="fa fa-thumbs-up fa-5x color-black"></i>
+                    <h3>Buena Onda</h3>
+                    <p>
+                        Veni a disfrutar del mejor clima de la ciudad,
+                        acompañando esa compañia con una buena comida!
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    <div id="contact-section" class="section" >
+        <div class="container" >
+          
+               
+            <div class="row main-low-margin">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" >
+                    <h1>Contactanos</h1>
+                    <h5>
+                       Si tenes alguna duda, envianos un mensaje
+                    </h5>
+                </div>
+            </div>
+         
+            
+        </div>
+    </div>
+
+        <div class="container-fluid" id="contacto">
+            <div class="row">
+                <div class="col-md-12  col-sm-12">
+                    <div class="col-md-6  col-sm-12" >
+                        <h3>Direccion</h3>
+                        <hr />
+                        <p>
+                        Diagonal 73, n°1297<br />
+                            La Plata, Argentina.<br />                          
+                        Call: +23-00-89-009<br />
+                        Email: demo@demo.ar<br />
+                            </p>
+                      
+                     </div>
+                    <div class="col-md-6  col-sm-12" >
+                        <h3 id="mensaje">Envianos tu consulta </h3>
+                        <hr />
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Nombre">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" required="required" class="form-control" rows="3"  placeholder="tu mensaje"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>      
+                </div>
+            </div>
+        </div>
+            
+
+            <div class="container-fluid" id="social">
+               <div class="col-sm-8 col-sm-offset-2 text-center righteous">
+                  <h2>Buscanos en las redes sociales</h2>
+                  
+                  <hr>
+                  <h4>
+                    Podes acceder a mas promociones!
+                  </h4>
+                  <p>Te esperamos!</p>
+                  <hr>
+                  <ul class="list-inline center-block">
+                    <li><a href="http://facebook.com"><img src="http://s.bootply.com/assets/example/soc_fb.png"></a></li>
+                    <li><a href="http://twitter.com"><img src="http://s.bootply.com/assets/example/soc_tw.png"></a></li>
+                    <li><a href="http://google.com"><img src="http://s.bootply.com/assets/example/soc_gplus.png"></a></li>
+                    <li><a href="http://pinterest.com"><img src="http://s.bootply.com/assets/example/soc_pin.png"></a></li>
+                  </ul>
+                  
+                </div><!--/col-->
+                </div>
+                    <!-- Footer -->
+                    <footer class="righteous">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Copyright &copy; Damian portilla (2215798072)</p>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </footer>
+              <!-- /.container -->
+
+                <!-- jQuery -->
+                <script src="http://code.jquery.com/jquery.js"></script>
+                <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+
+                <!-- Bootstrap Core JavaScript -->
+                <script src="js/bootstrap.min.js"></script>
+
+                <!-- Script to Activate the Carousel -->
+                <script>
+                $('.carousel').carousel({
+                    interval: 5000 //changes the speed
+                })
+                </script>
+</body>
+
+
+
